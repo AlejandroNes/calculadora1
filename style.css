@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.calculadora{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px; 
+}
+input:active{
+    transform: scale(0.9);
+}
+
+#display{
+    grid-area: 1/1/2/5;
+    font-size: 30px;
+    padding: 20px;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 5px solid rgb(44, 41, 41);
+    color: blanchedalmond;
+}
+#suma{
+    grid-area: 5/4/7/5;
+
+
+}
+#suma, #resta, #mult{
+    background: #0575E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #091f6e, #0b5eb1);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #03175e, #0e67c0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#igual{
+    grid-area: 6/1/7/4;
+    background: #e53935;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+input{
+    background: #0575E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    border: 1px solid rgb(3, 29, 85);
+    outline: none;
+    color: #fff;
+    font-size: 2rem;
+    
+}
+#display{
+    transform: none;
+}
+#borrar{
+    background-image: linear-gradient(rgb(182, 25, 25), #e44040);
+}
+h4{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: grey;
+}
+
+@media screen and (max-width: 1400px){
+    .calculadora{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .calculadora{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 550px){
+    .calculadora{
+        width: 80%;
+    }
+}
